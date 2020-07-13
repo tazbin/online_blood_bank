@@ -1,8 +1,6 @@
 # Online Blood Bank
-___
-##### A simple blood bank project for training purpose of RCF devTeam.
-##### Project developed in  **bootstrap**, **php** & **mysql**
-___
+A simple blood bank project for training purpose of RCF devTeam. Project developed in  **bootstrap**, **php** & **mysql**.
+
 ## Features:
 * Login/Logout mechanism
 * Donor addition & deletion system
@@ -24,4 +22,4 @@ ___
 
 ___
 
-_**Note:** This project containes **sql vulnerability**. Mainly this is for training & learning purpose about how a very basic web mechanism works. There are lots to improve_
+_**Note:** This project contains **sql vulnerability**. Mainly this is for training & learning purpose about how a very basic web mechanism works. There are lots to improve_
