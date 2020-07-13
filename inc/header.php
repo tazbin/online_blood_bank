@@ -4,19 +4,20 @@
   if( !isset($_SESSION['login']) || $_SESSION['login'] == 0 ){
     header('Location: login.php');
   }
+  include 'dbh.php';
  ?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blood donation system</title>
+    <title>Online Blood Bank</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
   <body>
     <!-- navbar starts -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <div class="container">
-  <a class="navbar-brand" href="#">Blood Donation System</a>
+  <a class="navbar-brand" href="#">Online Blood Bank</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,8 +27,8 @@
       <li class="nav-item <?php echo $page=='home' ? 'active': ''; ?>">
         <a class="nav-link" href="index.php">Home </a>
       </li>
-      <li class="nav-item <?php echo $page=='add_donor' ? 'active': ''; ?>">
-        <a class="nav-link" href="add_donor.php">Add donor</a>
+      <li class="nav-item <?php echo $page=='all_donors' ? 'active': ''; ?>">
+        <a class="nav-link" href="all_donors.php">All donors</a>
       </li>
       <li class="nav-item <?php echo $page=='search_donors' ? 'active': ''; ?>">
         <a class="nav-link" href="search_donors.php">Search donors</a>

@@ -8,7 +8,6 @@ include 'inc/header.php';
 </div> -->
 
 <?php
-include 'inc/dbh.php';
 $err = '';
 
 if (isset($_GET['id'])) {

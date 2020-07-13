@@ -47,7 +47,6 @@ if (isset($_POST['search_donors'])) {
     <tbody>
 
 <?php
-include 'inc/dbh.php';
 if (isset($_POST['search_donors'])) {
   $_group = $_POST['group'];
 

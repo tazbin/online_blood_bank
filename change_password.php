@@ -18,7 +18,6 @@ if (isset($_POST['change_password'])) {
     $err = 'not_matched';
   } else{
     // check in database
-    include 'inc/dbh.php';
     $sql = "SELECT * FROM admin WHERE id=1;";
     $result = mysqli_query($conn, $sql);
     $result_check = mysqli_num_rows($result);
